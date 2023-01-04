@@ -61,6 +61,10 @@ namespace WindowsFormsApp2
                 int height = rnd.Next(50, 200);
                 int x = rnd.Next(1, this.Width);
                 int y = rnd.Next(1, this.Height);
+
+                Graphics g = this.CreateGraphics();
+                g.DrawRectangle(Pens.Black, new Rectangle(x, y, width, height));
+                Thread.Sleep(3000);
             }
         }
     }
