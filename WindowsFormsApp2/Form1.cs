@@ -67,5 +67,15 @@ namespace WindowsFormsApp2
                 Thread.Sleep(3000);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(Circle);
+            t.Start();
+        }
+        private void Circle()
+        {
+
+        }
     }
 }
