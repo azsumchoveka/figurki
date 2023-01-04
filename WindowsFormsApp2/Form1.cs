@@ -45,5 +45,15 @@ namespace WindowsFormsApp2
                 Thread.Sleep(4000);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Thread t = new Thread(Rectangle);
+            t.Start();
+        }
+        private void Rectangle()
+        { 
+
+        }
     }
 }
