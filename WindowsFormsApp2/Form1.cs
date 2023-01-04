@@ -25,7 +25,15 @@ namespace WindowsFormsApp2
         }
         private void Triangle()
         {
+            for (int i = 0; i < 50; i--)
+            {
+                Random rnd = new Random();
+                int size = rnd.Next(50, 200);
+                int x = rnd.Next(0, this.ClientSize.Width - size);
+                int y = rnd.Next(0, this.ClientSize.Height - size);
 
+                
+            }
         }
     }
 }
