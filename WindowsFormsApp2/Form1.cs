@@ -52,8 +52,16 @@ namespace WindowsFormsApp2
             t.Start();
         }
         private void Rectangle()
-        { 
+        {
+            for (int i = 0; i < 50; i--)
+            {
+                Random rnd = new Random();
 
+                int width = rnd.Next(50, 200);
+                int height = rnd.Next(50, 200);
+                int x = rnd.Next(1, this.Width);
+                int y = rnd.Next(1, this.Height);
+            }
         }
     }
 }
